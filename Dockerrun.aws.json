@@ -10,7 +10,7 @@
       "memory": 128
     },
     {
-      "name": "server",
+      "name": "api",
       "image": "monsieurusmanahmed350/multi-server",
       "hostname": "api",
       "essential": false,
