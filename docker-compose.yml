@@ -1,11 +1,11 @@
 version: "3"
 services:
   client:
-    image: usmanahmed/multi-client
+    image: monsieurusmanahmed350/multi-client
     mem_limit: 128m
     hostname: client
   server:
-    image: usmanahmed/multi-server
+    image: monsieurusmanahmed350/multi-server
     mem_limit: 128m
     hostname: api
     environment:
@@ -17,14 +17,14 @@ services:
       - POSTGRES_PASSWORD=$PGPASSWORD
       - POSTGRES_DB=$PGDATABASE
   worker:
-    image: usmanahmed/multi-worker
+    image: monsieurusmanahmed350/multi-worker
     mem_limit: 128m
     hostname: worker
     environment:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
   nginx:
-    image: usmanahmed/multi-nginx
+    image: monsieurusmanahmed350/multi-nginx
     mem_limit: 128m
     hostname: nginx
     ports:
