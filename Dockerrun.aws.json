@@ -37,7 +37,7 @@
       ],
       "links": [
         "client",
-        "server"
+        "api"
       ]
     }
   ]
