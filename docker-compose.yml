@@ -4,7 +4,7 @@ services:
     image: monsieurusmanahmed350/multi-client
     mem_limit: 128m
     hostname: client
-  api:
+  server:
     image: monsieurusmanahmed350/multi-server
     mem_limit: 128m
     hostname: api
@@ -31,4 +31,4 @@ services:
       - 80:80
     depends_on:
       - client
-      - api
+      - server
