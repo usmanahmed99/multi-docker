@@ -1,10 +1,6 @@
 
 {
-  "AWSEBDockerrunVersion": "2",
-  "authentication": {
-    "bucket": "your-s3-bucket",
-    "key": "your-s3-key"
-  },
+  "AWSEBDockerrunVersion": "2",  
   "containerDefinitions": [
     {
       "name": "client",
