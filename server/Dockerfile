@@ -16,4 +16,4 @@ COPY . .
 
 
 # Set the command to start the application
-CMD ["npm", "run", "build"]
+CMD ["npm", "run", "start"]
